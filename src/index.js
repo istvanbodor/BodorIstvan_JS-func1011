@@ -111,3 +111,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+
+class Szazlabu{
+    labakSzama;
+    constructor(labakSzama)
+    {
+        this.labakSzama = labakSzama;
+    }
+    toString()
+    {
+        return this.labakSzama, ' Lábú százlábú';
+    }
+
+}
+
+
+function labakbolSzazlabuak(t)
+{
+    
+}
