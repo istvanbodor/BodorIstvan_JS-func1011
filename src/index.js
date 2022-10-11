@@ -133,5 +133,14 @@ function labakbolSzazlabuak(t)
 
 function szazlabuMegjelenites(id, lista)
 {
-    
+    let szulo = document.getElementById(id);
+        lista.array.forEach(element =>  {
+            let gyerek = document.createElement('li');
+            gyerek.textContent = element.toString();
+            szulo.appendChild(gyerek);
+            
+        });
+
+
+
 }
