@@ -86,14 +86,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 */
 
-documet.addEventListener('DOMContentLoaded', () => {
-
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Betöltve');
     let t = [];
     for (let i =0; i <20; i++) {
-        t.push(Math.random() *30 +1);
+        t.push((Math.random() *30 +1).toFixed());
     }
     let t2 =[];
-    t2 = t.filter(e => e/5==0);
+    t2 = t.filter(e => e%5==0);
     console.log(t);
     console.log(t2);
 })
