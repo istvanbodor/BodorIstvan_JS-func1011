@@ -128,5 +128,10 @@ class Szazlabu{
 
 function labakbolSzazlabuak(t)
 {
+    return t.map(e => new Szazlabu(e));
+}
+
+function szazlabuMegjelenites(id, lista)
+{
     
 }
