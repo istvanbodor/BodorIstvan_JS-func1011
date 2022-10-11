@@ -106,7 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
        t2.push(document.getElementById('hozzaadando').value);
        console.log(t2);
     });
-    
+    let list = [new Szazlabu(100), new Szazlabu(10)];
+    document.getElementById('listagomb').addEventListener('click', () => szazlabuMegjelenites('lista', list));
 
 
 })
@@ -120,7 +121,7 @@ class Szazlabu{
     }
     toString()
     {
-        return this.labakSzama, ' Lábú százlábú';
+        return this.labakSzama +  ' Lábú százlábú';
     }
 
 }
@@ -134,7 +135,7 @@ function labakbolSzazlabuak(t)
 function szazlabuMegjelenites(id, lista)
 {
     let szulo = document.getElementById(id);
-        lista.array.forEach(element =>  {
+        lista.forEach(element =>  {
             let gyerek = document.createElement('li');
             gyerek.textContent = element.toString();
             szulo.appendChild(gyerek);
