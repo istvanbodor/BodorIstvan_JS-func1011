@@ -96,5 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
     t2 = t.filter(e => e%5==0);
     console.log(t);
     console.log(t2);
+    document.getElementById('szinezes').addEventListener('click', () => {
+
+        t2 = t.filter(e => e%5==0);
+
+    });
+    
 })
 
