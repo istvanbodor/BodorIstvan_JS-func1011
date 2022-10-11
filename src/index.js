@@ -99,8 +99,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('szinezes').addEventListener('click', () => {
 
         t2 = t.filter(e => e%5==0);
+    });
 
+    document.getElementById('hozzaad').addEventListener('click', () => {
+
+       t2.push(document.getElementById('hozzaadando').value);
+       console.log(t2);
     });
     
+
+
 })
 
